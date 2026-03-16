@@ -100,10 +100,14 @@ echo "================================="
 echo "ISAACLAB INSTALL COMPLETE"
 echo "================================="
 
-mkdir -p ~/tocabi_ws/src
-cd ~/tocabi_ws/src
+echo "Downloading TOCABI packages..."
 
-unzip $SCRIPT_DIR/tocabi_packages/dyros_tocabi_v2.zip
-unzip $SCRIPT_DIR/tocabi_packages/mujoco_ros_sim.zip
-unzip $SCRIPT_DIR/tocabi_packages/tocabi_cc.zip
-unzip $SCRIPT_DIR/tocabi_packages/tocabi_avatar.zip
+
+
+wget --no-check-certificate \
+https://drive.google.com/drive/u/3/home \
+-O dyros_tocabi_v2.zip
+
+echo "Extracting TOCABI packages..."
+
+unzip dyros_tocabi_v2.zip
