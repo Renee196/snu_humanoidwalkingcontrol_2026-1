@@ -38,6 +38,7 @@ bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
 source "$HOME/miniconda/etc/profile.d/conda.sh"
 
 conda init
+source ~/.bashrc
 
 ########################################
 # 3 Create IsaacLab environment
@@ -46,6 +47,7 @@ conda init
 echo "Creating conda environment..."
 
 conda create -y -n env_isaaclab python=3.11
+source ~/miniconda/etc/profile.d/conda.sh
 conda activate env_isaaclab
 
 ########################################
