@@ -102,11 +102,7 @@ echo "================================="
 
 echo "Downloading TOCABI packages..."
 
-
-
-wget --no-check-certificate \
-https://drive.google.com/drive/u/3/home \
--O dyros_tocabi_v2.zip
+wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1yNfBKNSicUEOmNNVmM9JLR-eMDfcHoqH" -O dyros_tocabi_v2.zip
 
 echo "Extracting TOCABI packages..."
 
